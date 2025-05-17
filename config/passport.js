@@ -23,7 +23,7 @@ passport.use(new GoogleStrategy({
       
       if (!user) {
         // Create new user if not exists
-        const role = profile.emails[0].value === "kopisusu8ip@gmail.com" ? "designer" : "client";
+        const role = profile.emails[0].value === "aphexya@gmail.com"|| 'kopisusu8ip@gmail.com' ? "designer" : "client";
 
         // Buat user baru jika tidak ditemukan
         user = new User({
